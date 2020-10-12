@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Sign in - Report coronavirus information
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper govuk-main-wrapper--l govuk-!-padding-top-0 " id="main-content" role="main">
+
+        <div class="govuk-grid-row">
+            <div>
+                <div class="govuk-panel govuk-panel--confirmation">
+                    <h1 class="govuk-panel__title">
+                        Submission complete
+                    </h1>
+                </div>
+
+                <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Information</th>
+                        <th scope="col" class="govuk-table__header">Value</th>
+                    </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Total contacted</th>
+                        <td class="govuk-table__cell">{{ data['question-1'] }}</td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Total not contacted</th>
+                        <td class="govuk-table__cell">{{ data['question-2'] }}</td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Needs assessed and already met</th>
+                        <td class="govuk-table__cell">{{ data['question-3'] }}</td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Food needs met - supported</th>
+                        <td class="govuk-table__cell">{{ data['question-4'] }}</td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Food needs met - supplied</th>
+                        <td class="govuk-table__cell">{{ data['question-5'] }}</td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Basic and social support needs provided</th>
+                        <td class="govuk-table__cell">{{ data['question-6'] }}</td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Basic and social support needs not required</th>
+                        <td class="govuk-table__cell">{{ data['question-7'] }}</td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Total expenditure on support services</th>
+                        <td class="govuk-table__cell">£{{ data['question-8'] }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+                <p class="govuk-body">
+                    Thanks for submitting this information
+                </p>
+                <p class="govuk-body">
+                    Please update it in 7 days time
+                </p>
+
+
+                <div class="govuk-form-group govuk-!-margin-bottom-8">
+
+                    <a class="govuk-button govuk-!-margin-right-1" href="/outcomes">
+                        Continue
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+{% endblock %}
