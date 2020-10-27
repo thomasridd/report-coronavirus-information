@@ -23,56 +23,261 @@ Data reporting - Care provision
 {% block content %}
 
 <div class="govuk-grid-row govuk-!-margin-bottom-4">
-    <div class="govuk-grid-column-one-quarter">
-        &nbsp;
-    </div>
+
     <div class="govuk-grid-column-three-quarters">
-        <h1 class="govuk-heading-xl">Submissions
+        <h1 class="govuk-heading-xl">Submissions for Redbridge
         </h1>
-        <p>Submit new data to report current coronavirus information in your local authority</p>
     </div>
 </div>
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-quarter">
-        &nbsp;
-    </div>
     <div class="govuk-grid-column-three-quarters">
-        <section class="govuk-!-margin-bottom-6">
-            <h3 class="govuk-heading-m">Reports</h3>
-            <a class="govuk-link govuk-link--no-visited-state " href="/submit">Submit new information</a>
-        </section>
-        <section>
+        <section class="govuk-!-margin-bottom-9">
+            <h2 class="govuk-heading-m">Current submission</h2>
+            <p class="govuk-body">Submitted: 20/10/2020</p>
             <table class="govuk-table">
-                <thead class="govuk-table__header">
+                <thead class="govuk-table__head">
                 <tr class="govuk-table__row">
-                    <th scope="col" class="govuk-table__header">Previous reports</th>
+                    <th scope="col" class="govuk-table__header">Information</th>
+                    <th scope="col" class="govuk-table__header">Value</th>
                 </tr>
                 </thead>
                 <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
-                    <td class="govuk-table__cell">
-                        25/09/2020
-                    </td>
-                </tr>
-                <tr class="govuk-table__row">
-                    <td class="govuk-table__cell">
-                        18/09/2020
-                    </td>
-                </tr>
-                <tr class="govuk-table__row">
-                    <td class="govuk-table__cell">
-                        11/09/2020
-                    </td>
-                </tr>
-                <tr class="govuk-table__row">
-                    <td class="govuk-table__cell">
-                        03/09/2020
-                    </td>
+                    <td scope="row" class="govuk-table__cell">Total contacted</td>
+                    <td class="govuk-table__cell">1050</td>
                 </tr>
 
+                <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell">Total not contacted</td>
+                    <td class="govuk-table__cell">1500</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell">Needs assessed and already met</td>
+                    <td class="govuk-table__cell">732</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell">Food needs met - supported</td>
+                    <td class="govuk-table__cell">645</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell">Food needs met - supplied</td>
+                    <td class="govuk-table__cell">87</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell">Basic and social support needs provided</td>
+                    <td class="govuk-table__cell">210</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell">Basic and social support needs not required</td>
+                    <td class="govuk-table__cell">522</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                    <td scope="row" class="govuk-table__cell">Total expenditure on support services</td>
+                    <td class="govuk-table__cell">£110,000</td>
+                </tr>
                 </tbody>
             </table>
 
+            <a class="govuk-link govuk-link--no-visited-state " href="/submit">Submit new information</a>
+        </section>
+        <section>
+
+            <h2 class="govuk-heading-m">Past submissions</h2>
+
+            <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+                <div class="govuk-accordion__section">
+                    <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                            <span class=" govuk-body">13/10/2020</span>
+                            <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                            </span>
+                        </h2>
+                    </div>
+                    <div id="accordion-default-content-1" class="govuk-accordion__section-content"
+                         aria-labelledby="accordion-default-heading-1">
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header">Information</th>
+                                <th scope="col" class="govuk-table__header">Value</th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Total contacted</td>
+                                <td class="govuk-table__cell">1050</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Total not contacted</td>
+                                <td class="govuk-table__cell">1500</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Needs assessed and already met</td>
+                                <td class="govuk-table__cell">732</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Food needs met - supported</td>
+                                <td class="govuk-table__cell">645</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Food needs met - supplied</td>
+                                <td class="govuk-table__cell">87</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Basic and social support needs provided</td>
+                                <td class="govuk-table__cell">210</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Basic and social support needs not required
+                                </td>
+                                <td class="govuk-table__cell">522</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Total expenditure on support services</td>
+                                <td class="govuk-table__cell">£110,000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="govuk-accordion__section">
+                    <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                            <span class=" govuk-body">6/10/2020</span>
+                            <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                            </span>
+                        </h2>
+                    </div>
+                    <div id="accordion-default-content-1" class="govuk-accordion__section-content"
+                         aria-labelledby="accordion-default-heading-1">
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header">Information</th>
+                                <th scope="col" class="govuk-table__header">Value</th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Total contacted</td>
+                                <td class="govuk-table__cell">1050</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Total not contacted</td>
+                                <td class="govuk-table__cell">1500</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Needs assessed and already met</td>
+                                <td class="govuk-table__cell">732</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Food needs met - supported</td>
+                                <td class="govuk-table__cell">645</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Food needs met - supplied</td>
+                                <td class="govuk-table__cell">87</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Basic and social support needs provided</td>
+                                <td class="govuk-table__cell">210</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Basic and social support needs not required
+                                </td>
+                                <td class="govuk-table__cell">522</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Total expenditure on support services</td>
+                                <td class="govuk-table__cell">£110,000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="govuk-accordion__section">
+                    <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                            <span class=" govuk-body">30/09/2020</span>
+                            <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                            </span>
+                        </h2>
+                    </div>
+                    <div id="accordion-default-content-1" class="govuk-accordion__section-content"
+                         aria-labelledby="accordion-default-heading-1">
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header">Information</th>
+                                <th scope="col" class="govuk-table__header">Value</th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Total contacted</td>
+                                <td class="govuk-table__cell">1050</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Total not contacted</td>
+                                <td class="govuk-table__cell">1500</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Needs assessed and already met</td>
+                                <td class="govuk-table__cell">732</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Food needs met - supported</td>
+                                <td class="govuk-table__cell">645</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Food needs met - supplied</td>
+                                <td class="govuk-table__cell">87</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Basic and social support needs provided</td>
+                                <td class="govuk-table__cell">210</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Basic and social support needs not required
+                                </td>
+                                <td class="govuk-table__cell">522</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td scope="row" class="govuk-table__cell">Total expenditure on support services</td>
+                                <td class="govuk-table__cell">£110,000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </div>
