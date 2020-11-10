@@ -55,14 +55,22 @@
     {{ govukFooter({
       meta: {
         items: [
-          {
-            href: "https://govuk-prototype-kit.herokuapp.com/",
-            text: "GOV.UK Prototype Kit " + releaseVersion
-          },
-          {
-            href: "/prototype-admin/clear-data",
-            text: "Clear data"
-          }
+        {
+        href: "/",
+        text: "Start"
+        },
+        {
+        href: "/outcomes",
+        text: "Submit new data"
+        },
+        {
+        href: "/outcomes_completed",
+        text: "Submissions complete"
+        },
+        {
+        href: "/outcomes_overdue",
+        text: "Submission overdue"
+        }
         ]
       }
     }) }}
