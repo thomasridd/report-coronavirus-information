@@ -20,53 +20,118 @@ Sign in - Report coronavirus information
                 <table class="govuk-table">
                     <thead class="govuk-table__head">
                     <tr class="govuk-table__row">
-                        <th scope="col" class="govuk-table__header">Information</th>
-                        <th scope="col" class="govuk-table__header">Value</th>
+                        <th scope="col" class="govuk-table__header">Contacts made</th>
+                        <th scope="col" class="govuk-table__header"></th>
                     </tr>
                     </thead>
                     <tbody class="govuk-table__body">
                     <tr class="govuk-table__row">
-                        <th scope="row" class="govuk-table__header">Total contacted</th>
+                        <td class="govuk-table__cell">Total CEVs contacted</td>
                         <td class="govuk-table__cell">{{ data['question-1'] }}</td>
                     </tr>
 
                     <tr class="govuk-table__row">
-                        <th scope="row" class="govuk-table__header">Total not contacted</th>
+                        <td class="govuk-table__cell">Total CEVs not contacted</td>
                         <td class="govuk-table__cell">{{ data['question-2'] }}</td>
-                    </tr>
-
-                    <tr class="govuk-table__row">
-                        <th scope="row" class="govuk-table__header">Needs assessed and already met</th>
-                        <td class="govuk-table__cell">{{ data['question-3'] }}</td>
-                    </tr>
-
-                    <tr class="govuk-table__row">
-                        <th scope="row" class="govuk-table__header">Food needs met - supported</th>
-                        <td class="govuk-table__cell">{{ data['question-4'] }}</td>
-                    </tr>
-
-                    <tr class="govuk-table__row">
-                        <th scope="row" class="govuk-table__header">Food needs met - supplied</th>
-                        <td class="govuk-table__cell">{{ data['question-5'] }}</td>
-                    </tr>
-
-                    <tr class="govuk-table__row">
-                        <th scope="row" class="govuk-table__header">Basic and social support needs provided</th>
-                        <td class="govuk-table__cell">{{ data['question-6'] }}</td>
-                    </tr>
-
-                    <tr class="govuk-table__row">
-                        <th scope="row" class="govuk-table__header">Basic and social support needs not required</th>
-                        <td class="govuk-table__cell">{{ data['question-7'] }}</td>
-                    </tr>
-
-                    <tr class="govuk-table__row">
-                        <th scope="row" class="govuk-table__header">Total expenditure on support services</th>
-                        <td class="govuk-table__cell">£{{ data['question-8'] }}</td>
                     </tr>
                     </tbody>
                 </table>
 
+                <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">CEV food needs</th>
+                        <th scope="col" class="govuk-table__header"></th>
+                    </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">CEVs: no food needs</td>
+                        <td class="govuk-table__cell">{{ data['question-3'] }}</td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">CEVs: food supplied</td>
+                        <td class="govuk-table__cell">{{ data['question-4'] }}</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">CEVs: food other</td>
+                        <td class="govuk-table__cell">{{ data['question-5'] }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Financial estimates</th>
+                        <th scope="col" class="govuk-table__header"></th>
+                    </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">CEV spend: total</td>
+                        {% if data['question-6'] %}
+                            <td class="govuk-table__cell">£{{ data['question-6'] }}</td>
+                        {% else %}
+                            <td class="govuk-table__cell"></td>
+                        {% endif %}
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">CEV spend: contact</td>
+                        {% if data['question-7'] %}
+                            <td class="govuk-table__cell">{{ data['question-7'] }}%</td>
+                        {% else %}
+                            <td class="govuk-table__cell"></td>
+                        {% endif %}
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">CEV spend: food</td>
+                        {% if data['question-8'] %}
+                            <td class="govuk-table__cell">{{ data['question-8'] }}%</td>
+                        {% else %}
+                            <td class="govuk-table__cell"></td>
+                        {% endif %}
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">CEV spend: basic</td>
+                        {% if data['question-9'] %}
+                            <td class="govuk-table__cell">{{ data['question-9'] }}%</td>
+                        {% else %}
+                            <td class="govuk-table__cell"></td>
+                        {% endif %}
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">CEV spend: other</td>
+                        {% if data['question-10'] %}
+                            <td class="govuk-table__cell">{{ data['question-10'] }}%</td>
+                        {% else %}
+                            <td class="govuk-table__cell"></td>
+                        {% endif %}
+                    </tr>
+
+
+                    </tbody>
+                </table>
+
+                <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Support confidence</th>
+                        <th scope="col" class="govuk-table__header"></th>
+                    </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Confidence demands can be met</td>
+                        <td class="govuk-table__cell">{{ data['question-11'] }}</td>
+                    </tr>
+                    </tbody>
+                </table>
 
                 <p class="govuk-body">
                     Thanks for submitting this information
