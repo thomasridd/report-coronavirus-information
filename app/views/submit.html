@@ -34,96 +34,187 @@ Data reporting - Submit coronavirus information
 
     <form class="govuk-grid-column-three-quarters" action="/submitted" method="post">
         <h2 class="govuk-heading-l">Monday 1st Nov to Sunday 8th Nov</h2>
-        <div class="govuk-form-group govuk-!-margin-bottom-8">
-            <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="question-1">
-                Total contacted
+
+        <div class="govuk-form-group govuk-!-margin-bottom-4">
+            <h3 class="govuk-heading-l">CEVs contacted</h3>
+            <h4 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="question-1">
+                Total CEVs Contacted
             </label>
-            </h2>
+            </h4>
             <div id="question-1-hint" class="govuk-hint">
-                Number of people on the SPL in an LA area contacted by the local councils (contact can include number, letter, call or visit)
+                Number of CEVs contacted by the local councils (contact can include text, letter, call, visit)
             </div>
-            <input class="govuk-input govuk-input--width-3" id="question-1" name="question-1" type="number" step="1"
+            <input class="govuk-input govuk-input--width-5" id="question-1" name="question-1" type="number" step="1"
                    aria-describedby="event-name-hint">
         </div>
         <div class="govuk-form-group govuk-!-margin-bottom-8">
-            <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="question-2">
-                Total not contacted
+            <h4 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="question-2">
+                Total CEVs not contacted
             </label>
-            </h2>
+            </h4>
             <div id="question-2-hint" class="govuk-hint">
-                Numbers of CEVs on the SPL that the council was unable to contact
+                Number of CEVs that the council was unable to contact
             </div>
-            <input class="govuk-input govuk-input--width-3" id="question-2" name="question-2" type="number" step="1"
+            <input class="govuk-input govuk-input--width-5" id="question-2" name="question-2" type="number" step="1"
                    aria-describedby="event-name-hint">
         </div>
-        <div class="govuk-form-group govuk-!-margin-bottom-8">
-            <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="question-3">
-                Needs assessed and already met
+
+
+
+        <div class="govuk-form-group govuk-!-margin-bottom-4">
+            <h3 class="govuk-heading-l">CEV food needs</h3>
+            <h4 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="question-3">
+                CEVs: no food needs
             </label>
-            </h2>
+            </h4>
             <div id="question-3-hint" class="govuk-hint">
-                Numbers of CEVs the council has managed to understand needs of (via NSSS or their own assessments) and are satisfied that the CEVs needs are being met?
+                Number of CEVs who did not need support with access to food after follow-up
             </div>
-            <input class="govuk-input govuk-input--width-3" id="question-3" name="question-3" type="number" step="1"
+            <input class="govuk-input govuk-input--width-5" id="question-3" name="question-3" type="number" step="1"
                    aria-describedby="event-name-hint">
         </div>
-        <div class="govuk-form-group govuk-!-margin-bottom-8">
-            <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="question-4">
-                Food needs met - supported
+        <div class="govuk-form-group govuk-!-margin-bottom-4">
+            <h4 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="question-4">
+                CEVs: food supplied
             </label>
-            </h2>
+            </h4>
             <div id="question-4-hint" class="govuk-hint">
-                Number of people the council has supported to access food (paid for by individual/third party)
+                Number of CEVs directly supported to access food (paid in part or in full by the Council)
             </div>
-            <input class="govuk-input govuk-input--width-3" id="question-4" name="question-4" type="number" step="1"
+            <input class="govuk-input govuk-input--width-5" id="question-4" name="question-4" type="number" step="1"
                    aria-describedby="event-name-hint">
         </div>
         <div class="govuk-form-group govuk-!-margin-bottom-8">
-            <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="question-5">
-                Food needs met - supplied
+            <h4 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="question-5">
+                CEVs: food other
             </label>
-            </h2>
+            </h4>
             <div id="question-5-hint" class="govuk-hint">
-                Number of people to whom the local authority is supporting to access food (costs met in whole or part by local authority)
+                Number of CEVs redirected to other sources to access food e.g. supermarket slots, voluntary organisations
             </div>
-            <input class="govuk-input govuk-input--width-3" id="question-5" name="question-5" type="number" step="1"
+            <input class="govuk-input govuk-input--width-5" id="question-5" name="question-5" type="number" step="1"
                    aria-describedby="event-name-hint">
         </div>
-        <div class="govuk-form-group govuk-!-margin-bottom-8">
-            <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="question-6">
-                Basic and social support needs provided
+
+
+
+        <div class="govuk-form-group govuk-!-margin-bottom-4">
+            <h3 class="govuk-heading-l">Financial estimates</h3>
+            <h4 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="question-6">
+                Spend: total
             </label>
-            </h2>
+            </h4>
             <div id="question-6-hint" class="govuk-hint">
-                Number of people provided with basic support and/or social contact
-            </div>
-            <input class="govuk-input govuk-input--width-3" id="question-6" name="question-6" type="number" step="1"
-                   aria-describedby="event-name-hint">
-        </div>
-        <div class="govuk-form-group govuk-!-margin-bottom-8">
-            <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="question-7">
-                Basic and social support needs not required
-            </label>
-            </h2>
-            <div id="question-7-hint" class="govuk-hint">
-                Number of people who did not need basic support and/or social contact after follow-up
-            </div>
-            <input class="govuk-input govuk-input--width-3" id="question-7" name="question-7" type="number" step="1"
-                   aria-describedby="event-name-hint">
-        </div>
-        <div class="govuk-form-group govuk-!-margin-bottom-8">
-            <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="question-8">
-                Total expenditure on support services
-            </label>
-            </h2>
-            <div id="question-8-hint" class="govuk-hint">
-                Reports on spending broken down by the above categories
+                Overall estimated spend on support, including associated staff time and system overhead costs
             </div>
             <div class="govuk-input__wrapper">
                 <div class="govuk-input__prefix" aria-hidden="true">£</div>
-                <input class="govuk-input govuk-!-width-one-quarter" id="question-8" name="question-8" type="number" step="0.01" spellcheck="false">
+                <input class="govuk-input govuk-!-width-one-quarter" id="question-6" name="question-6" type="number" step="0.01" spellcheck="false">
             </div>
         </div>
+        <div class="govuk-form-group govuk-!-margin-bottom-4">
+            <h4 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="question-7">
+                Spend: contact
+            </label>
+            </h4>
+            <div id="question-7-hint" class="govuk-hint">
+                Approximately what percentage of the overall spend was for contacting CEVs, triaging individuals’ needs, and signposting to available support
+            </div>
+            <div class="govuk-input__wrapper">
+                <input class="govuk-input govuk-!-width-one-quarter" id="question-7" name="question-7" type="number" step="0.01"
+                       aria-describedby="event-name-hint">
+                <div class="govuk-input__suffix" aria-hidden="true">%</div>
+            </div>
+        </div>
+        <div class="govuk-form-group govuk-!-margin-bottom-4">
+            <h4 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="question-8">
+                Spend: food
+            </label>
+            </h4>
+            <div id="question-8-hint" class="govuk-hint">
+                Approximately what percentage of the overall spend was for providing food directly to CEV individuals at the expense of the council
+            </div>
+            <div class="govuk-input__wrapper">
+                <input class="govuk-input govuk-!-width-one-quarter" id="question-8" name="question-8" type="number" step="0.01"
+                       aria-describedby="event-name-hint">
+                <div class="govuk-input__suffix" aria-hidden="true">%</div>
+            </div>
+        </div>
+        <div class="govuk-form-group govuk-!-margin-bottom-4">
+            <h4 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="question-9">
+                CEV spend: basic
+            </label>
+            </h4>
+            <div id="question-9-hint" class="govuk-hint">
+                Approximately what percentage of the overall spend was for providing basic support
+            </div>
+            <div class="govuk-input__wrapper">
+                <input class="govuk-input govuk-!-width-one-quarter" id="question-9" name="question-9" type="number" step="0.01"
+                       aria-describedby="event-name-hint">
+                <div class="govuk-input__suffix" aria-hidden="true">%</div>
+            </div>
+        </div>
+        <div class="govuk-form-group govuk-!-margin-bottom-8">
+            <h4 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="question-10">
+                CEV spend: other
+            </label>
+            </h4>
+            <div id="question-10-hint" class="govuk-hint">
+                Approximately what percentage of the overall spend was on other activity to support CEVs, not captured in the categories above
+            </div>
+            <div class="govuk-input__wrapper">
+                <input class="govuk-input govuk-!-width-one-quarter" id="question-10" name="question-10" type="number" step="0.01"
+                       aria-describedby="event-name-hint">
+                <div class="govuk-input__suffix" aria-hidden="true">%</div>
+            </div>
+        </div>
+
+
+
+
+        <div class="govuk-form-group govuk-!-margin-bottom-8">
+            <div class="govuk-form-group">
+                <h3 class="govuk-heading-l">Confidence</h3>
+                <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                        <h4 class="govuk-fieldset__heading">
+                            Support confidence
+                        </h4>
+                        <div id="question-11-hint" class="govuk-hint">
+                            How confident are you that the council can meet CEV demands for support over the next week?
+                        </div>
+                    </legend>
+                    <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="question-11-1" name="question-11" type="radio" value="england">
+                            <label class="govuk-label govuk-radios__label" for="question-11-1">
+                                Very confident
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="question-11-2" name="question-11" type="radio" value="scotland">
+                            <label class="govuk-label govuk-radios__label" for="question-11-2">
+                                Fairly confident
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="question-11-3" name="question-11" type="radio" value="wales">
+                            <label class="govuk-label govuk-radios__label" for="question-11-3">
+                                Limited confidence
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="question-11-4" name="question-11" type="radio" value="northern-ireland">
+                            <label class="govuk-label govuk-radios__label" for="question-11-4">
+                                Not confident at all
+                            </label>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+        </div>
+
         <div class="govuk-form-group govuk-!-margin-bottom-8">
             <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">
                 Submit and check
