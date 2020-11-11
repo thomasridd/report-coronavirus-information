@@ -1,0 +1,395 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Data reporting - Care provision
+{% endblock %}
+
+{% block beforeAppContent %}
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/home">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/uploads">Data reporting</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link">Care provision</a>
+        </li>
+    </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row govuk-!-margin-bottom-4">
+
+    <div class="govuk-grid-column-three-quarters">
+        <h1 class="govuk-heading-xl">Submissions for Redbridge
+        </h1>
+    </div>
+</div>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+
+        <section>
+
+            <h3 class="govuk-heading-m">Submissions</h3>
+
+            <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+                <div class="govuk-accordion__section">
+                    <div class="govuk-accordion__section-header">
+                        <h3 class="govuk-accordion__section-heading">
+                            <span class="govuk-body"><strong>Monday 2 Nov to Sunday 8 Nov</strong></span>
+                            <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-x">
+                                <a class="govuk-link govuk-link--no-visited-state govuk-body-m" href="/submit">Submit new data</a>
+                            </div>
+                            <span class="govuk-accordion__section-button govuk-visually-hidden" id="accordion-default-heading-x">
+                            </span>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="govuk-accordion__section">
+                    <div class="govuk-accordion__section-header">
+                        <h3 class="govuk-accordion__section-heading">
+                            <span class="govuk-body"><strong>Monday 26 Oct to Sunday 1 Nov</strong></span>
+                            <span class="govuk-accordion__section-button" id="accordion-default-heading-0"></span>
+                        </h3>
+                        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-0">
+                            Last updated by <em>Tom Ridd</em> on 4 Nov 2020
+                        </div>
+
+                    </div>
+                    <div id="accordion-default-content-0" class="govuk-accordion__section-content"
+                         aria-labelledby="accordion-default-heading-0">
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Contacts made</th>
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-third"></th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Total CEVs contacted</td>
+                                <td class="govuk-table__cell">5032</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Total CEVs not contacted</td>
+                                <td class="govuk-table__cell">2400</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">CEV food needs</th>
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-third"></th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEVs: no food needs</td>
+                                <td class="govuk-table__cell">2300</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEVs: food supplied</td>
+                                <td class="govuk-table__cell">800</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEVs: food other</td>
+                                <td class="govuk-table__cell">1932</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Financial estimates</th>
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-third"></th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: total</td>
+                                <td class="govuk-table__cell">£110,000</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: contact</td>
+                                <td class="govuk-table__cell">15%</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: food</td>
+                                <td class="govuk-table__cell">25%</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: basic</td>
+                                <td class="govuk-table__cell">20%</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: other</td>
+                                <td class="govuk-table__cell">40%</td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Support confidence</th>
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-third"></th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Confidence demands can be met</td>
+                                <td class="govuk-table__cell">3 - Fairly confident</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <a class="govuk-link govuk-link--no-visited-state govuk-body-m govuk-!-padding-left-5" href="/update">Update this data</a>
+                    </div>
+                </div>
+                <div class="govuk-accordion__section">
+                    <div class="govuk-accordion__section-header">
+                        <h3 class="govuk-accordion__section-heading">
+                            <span class=" govuk-body"><strong>Monday 19 Oct to Sunday 25 Oct</strong></span>
+                            <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                            </span>
+                        </h3>
+                        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
+                            Last updated by <em>Tom Ridd</em> on 31 Oct 2020
+                        </div>
+                    </div>
+                    <div id="accordion-default-content-1" class="govuk-accordion__section-content"
+                         aria-labelledby="accordion-default-heading-1">
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Contacts made</th>
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-third"></th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Total CEVs contacted</td>
+                                <td class="govuk-table__cell">5032</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Total CEVs not contacted</td>
+                                <td class="govuk-table__cell">2400</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">CEV food needs</th>
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-third"></th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEVs: no food needs</td>
+                                <td class="govuk-table__cell">2300</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEVs: food supplied</td>
+                                <td class="govuk-table__cell">800</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEVs: food other</td>
+                                <td class="govuk-table__cell">1932</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Financial estimates</th>
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-third"></th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: total</td>
+                                <td class="govuk-table__cell">£110,000</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: contact</td>
+                                <td class="govuk-table__cell">15%</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: food</td>
+                                <td class="govuk-table__cell">25%</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: basic</td>
+                                <td class="govuk-table__cell">20%</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: other</td>
+                                <td class="govuk-table__cell">40%</td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Support confidence</th>
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-third"></th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Confidence demands can be met</td>
+                                <td class="govuk-table__cell">3 - Fairly confident</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <a class="govuk-link govuk-link--no-visited-state govuk-body-m govuk-!-padding-left-5" href="/update">Update this data</a>
+                    </div>
+                </div>
+                <div class="govuk-accordion__section">
+                    <div class="govuk-accordion__section-header">
+                        <h3 class="govuk-accordion__section-heading">
+                            <span class=" govuk-body"><strong>Monday 12 Oct to Sunday 18 Oct</strong></span>
+                            <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                            </span>
+                        </h3>
+                        <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2">
+                            Last updated by <em>Tom Ridd</em> on 20 Oct 2020
+                        </div>
+                    </div>
+                    <div id="accordion-default-content-2" class="govuk-accordion__section-content"
+                         aria-labelledby="accordion-default-heading-2">
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Contacts made</th>
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-third"></th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Total CEVs contacted</td>
+                                <td class="govuk-table__cell">5032</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Total CEVs not contacted</td>
+                                <td class="govuk-table__cell">2400</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">CEV food needs</th>
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-third"></th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEVs: no food needs</td>
+                                <td class="govuk-table__cell">2300</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEVs: food supplied</td>
+                                <td class="govuk-table__cell">800</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEVs: food other</td>
+                                <td class="govuk-table__cell">1932</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Financial estimates</th>
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-third"></th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: total</td>
+                                <td class="govuk-table__cell">£110,000</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: contact</td>
+                                <td class="govuk-table__cell">15%</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: food</td>
+                                <td class="govuk-table__cell">25%</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: basic</td>
+                                <td class="govuk-table__cell">20%</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">CEV spend: other</td>
+                                <td class="govuk-table__cell">40%</td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+
+                        <table class="govuk-table govuk-!-margin-left-5">
+                            <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-two-thirds">Support confidence</th>
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-third"></th>
+                            </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Confidence demands can be met</td>
+                                <td class="govuk-table__cell">3 - Fairly confident</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <a class="govuk-link govuk-link--no-visited-state govuk-body-m govuk-!-padding-left-5" href="/update">Update this data</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+{% endblock %}
